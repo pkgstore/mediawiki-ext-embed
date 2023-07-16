@@ -1,0 +1,55 @@
+{
+  "name": "MW_EXT_Embed",
+  "version": "1.0.0",
+  "author": [
+    "[https://ihub.to/ iHub TO]",
+    "[https://kitsune.solar/ Kitsune Solar]",
+    "..."
+  ],
+  "url": "https://ihub.to/",
+  "descriptionmsg": "mw-embed-desc",
+  "license-name": "[https://choosealicense.com/licenses/mit/ MIT]",
+  "type": "parserhook",
+  "require": {
+    "MediaWiki": ">= 1.31.0",
+    "extensions": {
+      "MW_EXT_Kernel": "*"
+    }
+  },
+  "AutoloadClasses": {
+    "MediaWiki\\Extension\\PkgStore\\MW_EXT_Embed": "MW_EXT_Embed.class.php"
+  },
+  "Hooks": {
+    "ParserFirstCallInit": [
+      "MediaWiki\\Extension\\PkgStore\\MW_EXT_Embed::onParserFirstCallInit"
+    ],
+    "BeforePageDisplay": [
+      "MediaWiki\\Extension\\PkgStore\\MW_EXT_Embed::onBeforePageDisplay"
+    ]
+  },
+  "ExtensionMessagesFiles": {
+    "MW_EXT_EmbedMagic": "MW_EXT_Embed.i18n.magic.php"
+  },
+  "MessagesDirs": {
+    "MW_EXT_Embed": [
+      "i18n"
+    ]
+  },
+  "ResourceModules": {
+    "ext.mw.embed.styles": {
+      "styles": [
+        "styles/theme.css"
+      ],
+      "position": "top",
+      "targets": [
+        "desktop",
+        "mobile"
+      ]
+    }
+  },
+  "ResourceFileModulePaths": {
+    "localBasePath": "modules",
+    "remoteExtPath": "MW_EXT_Embed/modules"
+  },
+  "manifest_version": 2
+}
