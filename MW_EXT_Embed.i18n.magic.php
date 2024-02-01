@@ -6,7 +6,7 @@
  * @file
  * @ingroup Extensions
  * @license MIT
- * @author iHub TO <https://ihub.to>
+ * @author Kai Kimera <https://kai.kim>
  */
 
 $magicWords = [];
@@ -14,7 +14,7 @@ $magicWords = [];
 /**
  * English.
  *
- * @author iHub TO <https://ihub.to>
+ * @author Kai Kimera <https://kai.kim>
  */
 
 $magicWords['en'] = [
@@ -25,7 +25,7 @@ $magicWords['en'] = [
 /**
  * Russian.
  *
- * @author iHub TO <https://ihub.to>
+ * @author Kai Kimera <https://kai.kim>
  */
 
 $magicWords['ru'] = [
